@@ -1,0 +1,16 @@
+runtime: nodejs16
+
+instance_class: F1
+
+automatic_scaling:
+    max_instances: 1
+
+env_variables:
+    NODE_ENV: "production"
+    CLIENT_ID: "971438587012845609"
+    PUBLIC_KEY: "af1b5a62451ef34009ed804a7be3fe1a30a1a7abfe60067aef8a5dc20d3e8807"
+
+handlers:
+  - url: .*
+    script: auto
+    secure: always

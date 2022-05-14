@@ -1,0 +1,40 @@
+{
+  "name": "discord",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./build/index.js",
+  "type": "module",
+  "engines": {
+    "node": "^16.0.0"
+  },
+  "scripts": {
+    "predeploy": "npm install && npm run clean_win && npm run build",
+    "clean_win": "rmdir build\\ /S /Q",
+    "clean_unix": "rm -fr ./build/",
+    "deploy": "gcloud app deploy",
+    "start": "node ./build/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "discord-api-types": "^0.32.0",
+    "@discordjs/rest": "^0.4.1",
+    "@js-temporal/polyfill": "^0.4.1",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "helmet": "^5.0.2",
+    "node-fetch": "^3.2.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.31",
+    "@types/node-fetch": "^2.6.1",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.14.0",
+    "prettier": "^2.6.2"
+  },
+  "author": "Sauli Kylmänen",
+  "license": "MIT"
+}
