@@ -15,4 +15,4 @@ Osaa myös luoda yksinkertaisia kyselyjä käyttäen [StrawPoll APIa](https://st
 
 - [GNU LGPL](https://www.gnu.org/licenses/lgpl-3.0.html)
 - [EUPL v.1.1](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12)
-- [Creative Commons Nimeä 3.0 Muokkaamaton](https://creativecommons.org/licenses/by/3.0/)
+- [Creative Commons Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/)
